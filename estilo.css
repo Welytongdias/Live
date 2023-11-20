@@ -1,0 +1,254 @@
+t1 {
+    color: white;
+}
+
+.container {
+    margin-top: 50px;
+    text-align: center;
+  }
+
+  body{
+    background-color: #eee;
+  }
+
+  .demo {
+      background-color: rgb(168, 200, 245);
+  }
+
+  .pagination-outer {
+      text-align: center;
+  }
+
+  .pagination {
+      background-color: #fff;
+      border-radius: 25px !important;
+      overflow: hidden;
+      border: none !important;
+  }
+
+
+  a:focus,
+  a:active {
+      outline: none !important;
+      box-shadow: none !important;
+  }
+  
+  .fa {
+      font-size: 11px ;
+      vertical-align: middle !important;
+      color: black;
+  }
+
+  .pagination li.active .fa {
+      color: #fff !important;
+  }
+
+  .pagination li a.page-link {
+      color: #505050;
+      background-color: transparent;
+      font-size: 17px;
+      font-weight: 600;
+      padding: 17px 25px;
+      border: none;
+      transition: all 0.3s ease 0s;
+  }
+
+  .fa-home {
+      transform: scale(1.4, 1.4) ;
+  }
+
+  .pagination li:last-child a.page-link {
+      border: none;
+  }
+
+  .pagination li.active a.page-link,
+  .pagination li a.page-link:hover,
+  .pagination li.active a.page-link:hover {
+      background-color: transparent;
+  }
+
+  .pagination li a.page-link:after {
+      content: '';
+      background-color: #42A5F5 !important;
+      height: 100%;
+      width: 100%;
+      transform: scaleY(0);
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      z-index: -1;
+      transition: all 0.3s;
+  }
+
+  .pagination li.active a.page-link:after,
+  .pagination li a.page-link:hover:after,
+  .pagination li.active a.page-link:hover:after {
+      transform: scaleY(1);
+      border-radius: 25px !important;
+
+  }      
+  @media (max-width: 767px) {
+    
+  .pagination li a.page-link {            
+      padding: 11px 8px !important;
+    } 
+
+  .fa{
+      font-size: 9px !important;
+    }
+
+  li a {
+      font-size: 12px !important;
+  }
+  
+  .page-item+.page-item {
+      padding-left: 0 !important;
+  }
+}
+/* ------------------------------*/
+
+ /*-------------------------------------*/
+
+ .whatsapp-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+}
+
+.whatsapp-icon img {
+    width: 40px;
+    height: auto;
+    border-radius: 50%;
+}
+
+.whatsapp-icon:hover {
+    opacity: 1;
+}
+
+.whatsapp-text {
+    display: none;
+    position: fixed;
+    bottom: 35px;
+    right: 60px;
+    background-color: #25d366;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    z-index: 1001;
+}
+
+.whatsapp-icon:hover + .whatsapp-text {
+    display: block;
+}
+
+/*---------------------------------------*/
+.btn-custom {
+    background-color:#D3D3D3; /* Cor verde de exemplo */
+    color: #696969; /* Cor do texto */
+}
+
+/*MAPS-----------------------*/
+
+.google-maps-icon {
+    position: fixed;
+    bottom: 20px;
+    left: 20px; /* Mudamos para "left" para posicionar no canto oposto */
+    z-index: 1000;
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+}
+
+.google-maps-icon img {
+    width: 40px;
+    height: auto;
+    border-radius: 50%;
+}
+
+.google-maps-icon:hover {
+    opacity: 1;
+}
+
+.maps-text {
+    display: none;
+    position: fixed;
+    bottom: 35px;
+    left: 60px; /* Mudamos para "left" para posicionar no canto oposto */
+    background-color: #4285f4; /* Cor de exemplo do Google Maps */
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    z-index: 1001;
+}
+
+.google-maps-icon:hover + .maps-text {
+    display: block;
+}
+/*----------------*/
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+
+.custom-carousel {
+    width: 75%;
+    margin: 0 auto;
+}
+
+.carousel-item {
+    height: 300px; /* Defina a altura desejada */
+}
+
+.carousel-caption {
+    background: rgba(212, 208, 208, 0.5); /* Fundo semi-transparente para o texto */
+    color: #65a56d; /* Cor do texto */
+    padding: 50px; /* Espaçamento interno */
+    position: absolute; /* Posição absoluta para sobrepor a imagem */
+    bottom: 0; /* Alinhar o texto na parte inferior */
+    left: 0; /* Alinhar o texto à esquerda */
+    width: 100%; /* Largura total do item do carrossel */
+}
+
+
+
+.calendar {
+    border-collapse: collapse;
+    width: 300px;
+    margin: 0 auto;
+}
+
+.calendar th, .calendar td {
+    border: 1px solid #ccc;
+    padding: 5px;
+    text-align: center;
+}
+
+.calendar th {
+    background-color: #f2f2f2;
+}
+
+.depoimentos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.depoimento {
+    max-width: 300px;
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+.depoimento img {
+    max-width: 100px;
+    border-radius: 50%;
+}
+
+
